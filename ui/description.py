@@ -8,26 +8,26 @@
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 
-class Ui_Form(object):
-    def setupUi(self, Form):
-        Form.setObjectName("Form")
-        Form.resize(1483, 673)
-        self.textEdit = QtWidgets.QTextEdit(Form)
+class Ui_DescrForm(object):
+    def setupUi(self, DescrForm):
+        DescrForm.setObjectName("DescrForm")
+        DescrForm.resize(1483, 673)
+        self.textEdit = QtWidgets.QTextEdit(DescrForm)
         self.textEdit.setGeometry(QtCore.QRect(10, 60, 1461, 611))
         self.textEdit.setObjectName("textEdit")
-        self.uploadBtn = QtWidgets.QPushButton(Form)
+        self.uploadBtn = QtWidgets.QPushButton(DescrForm)
         self.uploadBtn.setGeometry(QtCore.QRect(10, 10, 153, 45))
         self.uploadBtn.setObjectName("uploadBtn")
-        self.browserBtn = QtWidgets.QPushButton(Form)
+        self.browserBtn = QtWidgets.QPushButton(DescrForm)
         self.browserBtn.setGeometry(QtCore.QRect(170, 10, 241, 45))
         self.browserBtn.setObjectName("browserBtn")
 
-        self.retranslateUi(Form)
-        QtCore.QMetaObject.connectSlotsByName(Form)
+        self.retranslateUi(DescrForm)
+        QtCore.QMetaObject.connectSlotsByName(DescrForm)
 
-    def retranslateUi(self, Form):
+    def retranslateUi(self, DescrForm):
         _translate = QtCore.QCoreApplication.translate
-        Form.setWindowTitle(_translate("Form", "Procedure Description"))
-        self.uploadBtn.setText(_translate("Form", "Upload"))
-        self.browserBtn.setText(_translate("Form", "View in browser"))
+        DescrForm.setWindowTitle(_translate("DescrForm", "Procedure Description"))
+        self.uploadBtn.setText(_translate("DescrForm", "Upload"))
+        self.browserBtn.setText(_translate("DescrForm", "View in browser"))
 
